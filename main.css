@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat',monospace;
+  overflow: hidden;
+}
+
+.svgName {
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  left: 20%;
+  opacity: 1;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+}
+
+section div {
+  background-color: white;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 500px) {
+  section div {
+    height: 100vh;
+  }
+}
+
+.role {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+/*# sourceMappingURL=main.css.map */

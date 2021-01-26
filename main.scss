@@ -1,0 +1,40 @@
+//Mediaqueries for devices
+$breakPointTable: 700px;
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat',monospace;
+  overflow: hidden;
+}
+
+.svgName{
+    position: absolute;
+    z-index: 3;
+    top: 20%;
+    left:20%;
+    opacity:1;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  div {
+    background-color: white;
+    transition: background-color 0.5s;
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: 500px) {
+    div {
+      height: 100vh;
+    }
+  }
+}
+.role
+{
+  position:absolute;
+  top:40%;
+  left:40%;
+}
