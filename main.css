@@ -5,12 +5,39 @@ body {
   overflow: hidden;
 }
 
-.svgName {
+.textNameContainer {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .svgContainer {
+    display: none;
+  }
+  .textNameContainer {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+  .textNameContainer h1 {
+    text-transform: uppercase;
+    position: relative;
+    left: -50%;
+  }
+}
+
+.svgContainer {
   position: absolute;
   z-index: 3;
+  width: 60%;
   top: 20%;
-  left: 20%;
+  left: 50%;
   opacity: 1;
+}
+
+.svgContainer #svgName {
+  position: relative;
+  left: -50%;
 }
 
 section {
@@ -33,9 +60,14 @@ section div {
   }
 }
 
-.role {
+.roleContainer {
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 50%;
+}
+
+.roleContainer #roleTag {
+  position: relative;
+  left: -50%;
 }
 /*# sourceMappingURL=main.css.map */
