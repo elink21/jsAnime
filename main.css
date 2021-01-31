@@ -2,7 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Montserrat',monospace;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .textNameContainer {
@@ -69,5 +69,51 @@ section div {
 .roleContainer #roleTag {
   position: relative;
   left: -50%;
+}
+
+#handcraftedSign {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+  padding: 1%;
+  font-size: 0.8em;
+}
+
+#handcraftedSign .material-icons {
+  font-size: 2em;
+}
+
+#gameOptionDiv {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+}
+
+#gameOptionDiv #gameOptionTag {
+  position: relative;
+  left: -50%;
+  text-align: center;
+}
+
+#gameOptionDiv #gameOptionTag span {
+  font-size: 3em;
+}
+
+#webOptionDiv {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+}
+
+#webOptionDiv #webOptionTag {
+  position: relative;
+  left: -50%;
+  text-align: center;
+}
+
+#webOptionDiv #webOptionTag span {
+  font-size: 3em;
 }
 /*# sourceMappingURL=main.css.map */

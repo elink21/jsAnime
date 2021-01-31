@@ -5,7 +5,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Montserrat',monospace;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .textNameContainer{
@@ -74,4 +74,46 @@ section {
     left:-50%;
   }
  
+}
+
+#handcraftedSign{
+  text-align: center;
+  position: absolute;
+  right:0;
+  bottom:0;
+  font-weight:bold;
+  padding:1%;
+  font-size: 0.8em;
+
+  .material-icons{
+    font-size: 2em;
+  }
+}
+
+#gameOptionDiv{
+  position: absolute;
+  top:70%;
+  left:35%;
+  #gameOptionTag{
+    position: relative;
+    left: -50%;
+    text-align: center;
+    span{
+      font-size: 3em;
+    }
+  }
+}
+
+#webOptionDiv{
+  position: absolute;
+  top:70%;
+  left:65%;
+  #webOptionTag{
+    position: relative;
+    left: -50%;
+    text-align: center;
+    span{
+      font-size: 3em;
+    }
+  }
 }

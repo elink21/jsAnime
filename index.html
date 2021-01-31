@@ -11,8 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!--Absolute pos elements-->
+    <div id="handcraftedSign">
+      <span class="material-icons" id="handCraftedIcon"> architecture </span>
+      <br />
+      <span> Handcrafted design and animations </span>
+    </div>
+    <!---End of absolute positioned elements-->
     <div class="textNameContainer">
       <h1>Edgardo</h1>
     </div>
@@ -99,20 +111,40 @@
       <div id="right"></div>
     </section>
 
+    <div id="gameOptionDiv">
+      <span id="gameOptionTag">
+        <span class="material-icons"> sports_esports </span>
+      </span>
+    </div>
+
+    <div id="webOptionDiv">
+      <span id="webOptionTag">
+        <span class="material-icons"> sports_esports </span>
+      </span>
+    </div>
+
+    <div id="noAbsolute">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex ad
+        optio assumenda suscipit fugiat architecto velit illum vitae ipsam at
+        dolorem ea, cum nesciunt dicta sunt perspiciatis! Assumenda, harum.
+      </p>
+    </div>
+
     <script>
       let grids = document.querySelectorAll("div");
       let num = 0;
+      let staggerTime = 20;
 
       let timeline = anime.timeline({
         easing: "easeOutExpo",
-        duration: 750,
       });
 
       timeline.add({
         targets: "section div",
         width: "100%",
         backgroundColor: "rgb(0,137,123)",
-        delay: anime.stagger(100),
+        delay: anime.stagger(staggerTime),
       });
 
       timeline.add({
@@ -120,33 +152,37 @@
         backgroundColor: "rgba(0,137,123,0.9)",
         width: "90%",
         direction: "reverse",
-        delay: anime.stagger(100),
+        delay: anime.stagger(staggerTime),
       });
 
       timeline.add({
         targets: "section #right",
         rotateZ: "45",
-        width:"100%",
-    
+        width: "100%",
+
         translateX: "-50%",
         translateY: "-20vh",
         borderRadius: "10% 10%",
-        zIndex:-1,
+        zIndex: -1,
         backgroundColor: "rgba(0,137,123,0.2)",
-        delay: anime.stagger(100),
+        delay: anime.stagger(staggerTime),
       });
-      timeline.add({
-        width:"100%",
-        
-        targets: "section #left",
-        rotateZ: "-45",
-        translateX: "50%",
-        translateY: "-20vh",
-        borderRadius: "10% 10%",
-        zIndex:-1,
-        backgroundColor: "rgba(0,137,123,0.2)",
-        delay: anime.stagger(100),
-      },"-=1000");
+
+      timeline.add(
+        {
+          width: "100%",
+
+          targets: "section #left",
+          rotateZ: "-45",
+          translateX: "50%",
+          translateY: "-20vh",
+          borderRadius: "10% 10%",
+          zIndex: -1,
+          backgroundColor: "rgba(0,137,123,0.2)",
+          delay: anime.stagger(staggerTime),
+        },
+        "-=1000"
+      );
 
       timeline.add({
         targets: "#svgName path",
@@ -160,17 +196,35 @@
         direction: "alternate",
       });
 
-      timeline.add({
-        targets:".textNameContainer h1",
-        opacity:[0,1],
-        easing:"easeInOutSine",
-        duration:400
-      },"-=1000");
+      timeline.add(
+        {
+          targets: ".textNameContainer h1",
+          opacity: [0, 1],
+          easing: "easeInOutSine",
+          duration: 200,
+        },
+        "-=1000"
+      );
 
       timeline.add({
         targets: "#roleTag",
         opacity: [0, 1],
         easing: "easeInOutSine",
+      });
+
+      timeline.add({
+        targets: "#handcraftedSign",
+        opacity: [0, 1],
+        easing: "easeInOutSine",
+      });
+
+      var circle = anime({
+        targets: "#handCraftedIcon",
+        rotateZ: [-30, 30],
+        loop: true,
+        direction: "alternate",
+        easing: "easeInOutSine",
+        duration: 1500,
       });
     </script>
   </body>
