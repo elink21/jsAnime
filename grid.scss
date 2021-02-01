@@ -1,0 +1,46 @@
+body{
+    overflow-x: hidden;
+}
+
+.wrapperA {
+  //Most important section for grid
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 1em;
+  row-gap: 1em;
+
+  div {
+    padding: 1em;
+    background-color: rgba(179,229,252 ,1);
+  }
+
+  div:nth-child(odd) {
+    background-color: rgba(178,223,219 ,1);
+  }
+}
+
+.wrapperB{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    div{
+        padding: 2em;
+        background-color: blueviolet;
+    }
+}
+
+
+.wrapperC{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1em;
+    div{
+        padding: 1em;
+        background-color: crimson;
+    }
+}

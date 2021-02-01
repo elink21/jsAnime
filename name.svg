@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--Absolute pos elements-->
-    <div id="handcraftedSign">
-      <span class="material-icons" id="handCraftedIcon"> architecture </span>
-      <br />
-      <span> Handcrafted design and animations </span>
-    </div>
-    <!---End of absolute positioned elements-->
-    <div class="textNameContainer">
-      <h1>Edgardo</h1>
-    </div>
-    <div class="svgContainer">
-      <svg
-        id="svgName"
+<svg
         viewBox="0 0 2189.2 600"
         stroke-width="2"
         fill="none"
@@ -98,41 +66,3 @@
           d="M99.0 -186.5C151.0 -186.5 192.0 -144.5 192.0 -92.5C192.0 -41.5 151.0 0.5 99.0 0.5C48.0 0.5 6.0 -41.5 6.0 -92.5C6.0 -144.5 48.0 -186.5 99.0 -186.5"
         />
       </svg>
-    </div>
-
-    <div class="roleContainer">
-      <h3 id="roleTag">Web and game developer</h3>
-    </div>
-
-    <section>
-      <div id="left"></div>
-      <div id="left"></div>
-      <div id="right"></div>
-      <div id="right"></div>
-    </section>
-
-    <div id="gameOptionDiv">
-      <span id="gameOptionTag">
-        <span class="material-icons"> sports_esports </span>
-      </span>
-    </div>
-
-    <div id="webOptionDiv">
-      <span id="webOptionTag">
-        <span class="material-icons"> sports_esports </span>
-      </span>
-    </div>
-
-    <div id="noAbsolute">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex ad
-        optio assumenda suscipit fugiat architecto velit illum vitae ipsam at
-        dolorem ea, cum nesciunt dicta sunt perspiciatis! Assumenda, harum.
-      </p>
-    </div>
-
-    <script src="animationLine.js">
-      
-    </script>
-  </body>
-</html>

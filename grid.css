@@ -1,0 +1,49 @@
+body {
+  overflow-x: hidden;
+}
+
+.wrapperA {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 1em;
+}
+
+.wrapperA div {
+  padding: 1em;
+  background-color: #b3e5fc;
+}
+
+.wrapperA div:nth-child(odd) {
+  background-color: #b2dfdb;
+}
+
+.wrapperB {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.wrapperB div {
+  padding: 2em;
+  background-color: blueviolet;
+}
+
+.wrapperC {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.wrapperC div {
+  padding: 1em;
+  background-color: crimson;
+}
+/*# sourceMappingURL=grid.css.map */
